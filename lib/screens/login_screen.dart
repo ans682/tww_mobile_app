@@ -68,8 +68,11 @@ class _LoginScreenState extends State<LoginScreen> {
         // Padding!
         padding: EdgeInsets.fromLTRB(20, 15, 20, 15),
         minWidth: MediaQuery.of(context).size.width,
-
-        onPressed: () {},
+        // navigate to Home Screen after user clicks 'Login' button
+        onPressed: () {
+          Navigator.pushReplacement(
+              context, MaterialPageRoute(builder: (context) => HomeScreen()));
+        },
         child: Text("Login",
             textAlign: TextAlign.center,
             style: TextStyle(
