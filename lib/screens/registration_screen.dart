@@ -112,7 +112,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
           hintText: "Confirm Password",
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
-          ),
+          ), 
         ));
 
     // signup button
